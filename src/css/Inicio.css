@@ -1,0 +1,38 @@
+.contenedor-inicio{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.contenedor-inicio article{
+    width: 50%;
+    
+}
+.presentacion{
+    /*margin-left: 1em;*/
+    width: 50%;
+    height: 100vh;
+    background-color: #f59b9b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.presentacion div{
+    margin-left: 2rem;
+}
+.presentacion h1{
+    font-size: 4em;
+}
+.presentacion p{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.canvas-inicio{
+    width: 100%;
+}
+.canvas-contenedor{
+    height: 100vh;
+    width: 50%;
+    background-color: #0a0802;
+    display: flex;
+    justify-content: center;
+}

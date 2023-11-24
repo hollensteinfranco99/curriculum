@@ -1,0 +1,66 @@
+.contenedor-skills{
+    padding: 0px;
+    margin:0px ;
+    height: 100vh;
+}
+.padre-skills{
+    width: 100%;
+    margin: 0;
+}
+.cont-skills{
+    padding: 7rem;
+    height: 100vh;
+    width: 50%;
+}
+.skills{
+    margin: 5rem 0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
+.skills div{
+    position: relative;
+}
+.skills div span{
+    position: absolute;
+    text-align: center;
+    left: 20%;
+    bottom: -3rem;
+    font-size: 20px;
+}
+.contenedor-img-skills{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 5px;
+    margin-left: 0.7rem;
+    margin-top: 3.2rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 0px black;
+    overflow: hidden;
+    transition: all 0.1s ease-in;
+    border: 1px solid black;
+    padding: 5px;
+}
+.contenedor-img-skills:hover{
+    box-shadow: 0px 2px 0px black;
+    transform: translateY(6%);
+}
+.contenedor-img-skills img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.sobre-mi{
+    padding: 7rem 2rem;
+    width: 50%;
+    background-color: #0a0802;
+    color: white;
+    height: 100vh;
+}
+.sobre-mi p{
+    margin: 5rem 0px;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 2.2rem;
+}

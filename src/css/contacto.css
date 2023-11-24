@@ -1,0 +1,80 @@
+.contenedor-contacto{
+    height: 100%;
+}
+.seccion-contacto{
+    display: flex;
+}
+.titulo-contacto{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: white ;
+}
+.contenedor-formulario{
+    margin: 3rem;
+    padding: 1rem;
+    width: 50%;
+}
+.formulario{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    margin: auto;
+}
+.formulario input,textarea{
+    width: 100%;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    font-size: 25px !important;
+}
+.formulario input:focus{
+    border: 1px solid black !important;
+    box-shadow: 0 0 0 0.25rem #79bcbca2;
+}
+.formulario textarea:focus{
+    border: 1px solid black !important;
+    box-shadow: 0 0 0 0.25rem #79bcbca2;
+}
+textarea{
+    height: 5rem;
+}
+.formulario button{
+    margin-top: 1rem;
+    padding: 0.3rem 3rem;
+    font-size: 30px;
+    border: 1px solid black;
+    box-shadow: 0px 7px 0px black;
+    transition: all 0.1s ease-in;
+    border-radius: 0;
+}
+.formulario button:hover{
+    box-shadow: 0px 1px 0px black;
+    transform: translateY(10%);
+}
+.mapa{
+    width: 50%;
+    margin: 3rem 2rem;
+}
+.mapa iframe{
+    width: 100%;
+    height: 100%;
+}
+.formas-contacto{
+    margin: 0rem 3rem;
+}
+.formas-contacto a{
+    color: white;
+    padding: 0.4rem 1.3rem !important;
+    font-size: 25px;
+    margin-left: 0.3rem;
+    border-radius: 0;
+    border: 1px solid black;
+    box-shadow: 0px 7px 0px black;
+    transition: all 0.1s ease-in;
+}
+.formas-contacto a:hover{
+    box-shadow: 0px 1px 0px black;
+    transform: translateY(10%);
+}
+
