@@ -7,11 +7,15 @@ import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 const Navegador = (props) => {
 
     const inidiceBuscar = (elemento) => {
-        if(window.innerWidth >= 1150){
+        let navegador = document.getElementById("menu-nav");
+        if (navegador.classList.contains("visible")) {
+            navegador.classList.remove("visible");
+        } else {
+            navegador.classList.add("visible");
+        }
         elemento.current.scrollIntoView({
             behavior: 'smooth',
-        })
-    }
+    })
     }
     const desplegarMenu = () => {
         let navegador = document.getElementById("menu-nav");

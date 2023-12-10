@@ -1,5 +1,5 @@
 .contenedor-proyectos{
-    padding: 5rem 2rem;
+    padding: 2rem 2rem;
 }
 .titulo-cont{
     text-align: center;
@@ -11,23 +11,30 @@
     display: flex;
     justify-content: center;
 }
+.pixie-logo{
+    font-family: 'pixie';
+    font-size: 1.5rem;
+    text-align: center;
+}
 /* ================= imagen principal =====================*/
 .contenedor-img-proyecto{
-    width: 20rem;
     overflow: hidden;
     border-radius: 1.2rem;
-    box-shadow: 0px 5px 10px black;
     z-index: 1;
+    height: 18rem;
 }
 .contenedor-img-proyecto img{
     width: 100%;
+    height: 100%;
     border-radius: 1.2rem;
     object-fit: cover;
 }
 /* ============ tarjeta completa ============= */
 .tarjeta-proyecto{
-    width: 20rem;
     position: relative;
+    border-radius: 1.2rem !important;
+    width: 25rem;
+    margin-left: 0.5em;
 }
 /* ========== informacion hover ================*/
 .contenedor-img-logo{
@@ -50,7 +57,7 @@
 .informacion-tarjeta{
     position: absolute;
     top: 60%;
-    left: 50%;
+    left: 55%;
     transform: translate(-50%, -60%);
     z-index: 3;
 }
@@ -71,7 +78,7 @@
 }
 .tarjeta-hover:hover .contenedor-img-proyecto::before {
     background-color: rgba(0, 0, 0, 0.5); /* Puedes ajustar el color y la opacidad aquí */
-}   
+}
 .tarjeta-hover:hover a{
     opacity: 1;
 }
@@ -91,4 +98,70 @@
 }
 .descripcion span{
     font-size: 20px;
+}
+/* =============== swiper slide =============== */
+.galeria-proyectos .swiper-slide{
+    justify-content: center;
+    display: flex;
+    border-radius: 1.2rem !important;
+}
+
+/* ======================= BOTONES SWIPER JS ============================= */ 
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, 10px);
+    left: auto;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: 'next';
+    margin-left: 0.2rem;
+}
+.swiper-button-prev.swiper-button, .swiper-button-next.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: auto;
+    pointer-events: none;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 10px);
+    right: auto;
+}
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset, 40%);
+    width: 2rem;
+    height: 2rem;
+    margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    background: #343a40;
+    border-radius: 50%;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    margin-right: 0.2rem;
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-family: swiper-icons;
+    font-size: var(--swiper-navigation-size);
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
+/* ======================= BOTONES SWIPER JS ============================= */
+
+@media (max-width: 600px){
+    .contenedor-img-proyecto{
+        height: 7em;
+    }
+    .descripcion p{
+        font-size: 20px;
+    }
+    .tarjeta-proyecto{
+        width: 20rem;
+    }
 }

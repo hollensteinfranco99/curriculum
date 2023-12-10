@@ -3,8 +3,16 @@
     src: url('fonts/DOMCO.otf') format('opentype');
 }
 @font-face {
+    font-family: 'fuenteLoader'; /* Nombre de la fuente que quieras asignar */
+    src: url('fonts/JMH\ Savage.otf') format('opentype'); /* Ruta correcta al archivo OTF */
+}
+@font-face {
     font-family: 'fuente-2';
     src: url('fonts/Dooodleistabold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'pixie';
+    src: url('fonts/DoctorGlitch.otf') format('opentype');
 }
 h1,h2,h3{
     font-family: 'fuente-1';
@@ -22,6 +30,7 @@ body {
     font-family: 'fuente-2';
     font-size: 30px;
     height: 100vh;
+    background: #f59b9b;
 }
 
 h2 {
@@ -32,16 +41,17 @@ h2 {
 .contenedor-contacto,
 .contenedor-inicio,
 .contenedor-proyectos,
-.contenedor-skills {
-    padding-top: 4em;
+.contenedor-skills,
+.sobre-mi {
+    padding-top: 2em;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     color: white;
+    overflow: scroll;
 }
 
 .contenedor-inicio {
-    background-color: #0a0802;
-
+    background-color: #f59b9b;
 }
 
 .contenedor-skills {
@@ -60,7 +70,21 @@ h2 {
     background-color: #4C5056;
     /*background-color: rgb(123,203,202);*/
 }
-
+/* =========== scroll =============== */ 
+::-webkit-scrollbar {
+    display: none;
+}
+.scroll-container {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+.scroll-item {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+/* ============================ */
 .navegador {
     z-index: 10;
     position: fixed;
@@ -91,6 +115,8 @@ h2 {
 .nav-list.visible{
     opacity: 1;
     visibility: visible;
+    transition: all 0.2s ease-in;
+
 }
 
 .li-opc {
@@ -107,6 +133,11 @@ h2 {
 .li-opc:hover {
     background-color: rgb(79, 79, 79);
 }
+/* Sweet Alert */
+.swal2-html-container{
+    font-size: 1.7rem !important;
+}
+
 @media (max-width: 700px){
     .btn-abrir-menu,.btn-cerrar-menu{
         opacity: 1;
@@ -115,7 +146,6 @@ h2 {
     .nav-list{
         opacity: 0;
         visibility: hidden;
-        transition: all 0.2s ease-in;
     }
     .nav-list{
         position: absolute;
@@ -129,21 +159,6 @@ h2 {
     }
 }
 
-@media screen and (min-width: 1150px) {
-    ::-webkit-scrollbar {
-        display: none;
-    }
-    .scroll-container {
-        overflow-y: scroll;
-        scroll-snap-type: y mandatory;
-        height: 100vh;
-        scroll-behavior: smooth;
-    }
-    .scroll-item {
-        height: 100vh;
-        scroll-snap-align: start;
-    }
-}
 
 @keyframes scroll {
     0% {

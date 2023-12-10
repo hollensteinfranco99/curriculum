@@ -6,6 +6,7 @@ import js from './js.png';
 import react from './react.png';
 import pelicula from './proyecto-pelicula.png';
 import primelogo from './primelogo.png';
+import pixie from './pixieGame.png';
 
 let imagenes = {
     css: css,
@@ -15,7 +16,8 @@ let imagenes = {
     js:js,
     react:react,
     pelicula:pelicula,
-    primelogo:primelogo
+    primelogo:primelogo,
+    pixie:pixie
 }
 
 export {imagenes};

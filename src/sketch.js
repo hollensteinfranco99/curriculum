@@ -9,7 +9,6 @@ import imagen1 from './imagen/images1.png';
 
 
 const settings = {
-	dimensions: [1080, 1080],
 	animate: true
 };
 // variables globales
@@ -29,7 +28,7 @@ const sketch = ({ width, height, canvas }) => {
 	let dotRadius = 12;
 	let cirRadius = 0;
 	const fitRadius = dotRadius;
-	const numCircles = 18;
+	const numCircles = 13;
 	const gapCircle = 6;
 	const gapDot = 5;
 

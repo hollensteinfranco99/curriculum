@@ -1,19 +1,20 @@
 .contenedor-skills{
     padding: 0px;
     margin:0px ;
-    height: 100vh;
 }
 .padre-skills{
     width: 100%;
     margin: 0;
+    height: 100vh;
 }
 .cont-skills{
     padding: 7rem;
     height: 100vh;
+    margin: 0;
     width: 50%;
+    background-color: #FEE9B7;
 }
 .skills{
-    margin: 5rem 0px;
     display: flex;
     flex-wrap: wrap;
     width: auto;
@@ -56,11 +57,31 @@
     width: 50%;
     background-color: #0a0802;
     color: white;
-    height: 100vh;
 }
 .sobre-mi p{
     margin: 5rem 0px;
     font-size: 40px;
     font-weight: 800;
     line-height: 2.2rem;
+}
+
+@media (max-width : 900px){
+    .cont-skills h2{
+        text-align: center;
+    }
+    .padre-skills{
+        justify-content: center;
+        display: flex;
+    }
+    .skills{
+        display: flex;
+        justify-content: center;
+    }
+    .cont-skills{
+        width: 100%;
+        padding: 7rem 0;
+    }
+    .sobre-mi{
+        width: 100%;
+    }
 }

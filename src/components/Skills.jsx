@@ -6,13 +6,16 @@ const Skills = forwardRef((props, ref) => {
     return (
         <div ref={ref} className='scroll-item contenedor-skills'>
             <section className='d-flex padre-skills'>
-                <section className='sobre-mi'>
+                {
+                    props.esDispositivoPequeno ? null : 
+                    <section ref={ref} className='scroll-item sobre-mi'>
                     <h2>Sobre mi</h2>
                     <article>
                         <p>Hola soy desarrollador web, estudiante en la carrera Tecnico superior en programacion.
                             me especializo en el desarrollo front-end principalmente.  <br/> Actualmente estudio y busco ampliar mi campo laboral en el mundo de desarrollo web</p>
                     </article>
                 </section>
+                }
 
                 <section className='cont-skills'>
                     <h2>Skills</h2>
