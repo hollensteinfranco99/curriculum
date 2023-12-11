@@ -74,12 +74,14 @@ textarea{
     transform: translateY(10%);
 }
 
-@media (max-width:600px) {
+@media (max-width:768px) {
     .titulo-contacto p{
         font-size: 20px;
     }
     .mapa div{
         margin: 0;
+        display: none;
+
     }
     .mapa iframe{
         height: auto !important;

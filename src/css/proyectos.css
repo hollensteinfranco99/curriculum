@@ -1,70 +1,86 @@
-.contenedor-proyectos{
+.contenedor-proyectos {
     padding: 2rem 2rem;
 }
-.titulo-cont{
+
+.titulo-cont {
     text-align: center;
 }
-.contenedor-proyectos h2{
+
+.contenedor-proyectos h2 {
     margin: 4rem 0;
 }
-.galeria-proyectos{
+
+.galeria-proyectos {
     display: flex;
     justify-content: center;
 }
-.pixie-logo{
+
+.pixie-logo {
     font-family: 'pixie';
     font-size: 1.5rem;
     text-align: center;
 }
+
 /* ================= imagen principal =====================*/
-.contenedor-img-proyecto{
+.contenedor-img-proyecto {
     overflow: hidden;
     border-radius: 1.2rem;
     z-index: 1;
     height: 18rem;
 }
-.contenedor-img-proyecto img{
+
+.contenedor-img-proyecto img {
     width: 100%;
     height: 100%;
     border-radius: 1.2rem;
     object-fit: cover;
 }
+
 /* ============ tarjeta completa ============= */
-.tarjeta-proyecto{
+.tarjeta-proyecto {
     position: relative;
     border-radius: 1.2rem !important;
     width: 25rem;
     margin-left: 0.5em;
 }
+
 /* ========== informacion hover ================*/
-.contenedor-img-logo{
+.contenedor-img-logo {
     width: 10rem;
     opacity: 0;
+    visibility: hidden;
     transition: all 0.3s ease-in;
 }
-.informacion-tarjeta img{
+
+.informacion-tarjeta img {
     width: 100%;
 }
-.informacion-tarjeta a{
+
+.informacion-tarjeta a {
     margin: 1.3rem 0rem 0rem 2.3rem;
     font-size: 23px;
     opacity: 0;
+    visibility: hidden;
     transition: all 0.3s ease-in;
 }
-.informacion-tarjeta .btn-codigo{
+
+.informacion-tarjeta .btn-codigo {
     margin-top: 0.3rem;
 }
-.informacion-tarjeta{
+
+.informacion-tarjeta {
     position: absolute;
     top: 60%;
     left: 55%;
     transform: translate(-50%, -60%);
     z-index: 3;
 }
+
 /* ============= hover before ==========*/
-.tarjeta-hover{
+.tarjeta-hover {
     position: relative;
 }
+
 .contenedor-img-proyecto::before {
     content: "";
     position: absolute;
@@ -73,58 +89,64 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0); /* Inicialmente transparente */
-    transition: background-color 0.3s ease-in; /* Transición suave */
+    background-color: rgba(0, 0, 0, 0);
+    /* Inicialmente transparente */
+    transition: background-color 0.3s ease-in;
+    /* Transición suave */
 }
-.tarjeta-hover:hover .contenedor-img-proyecto::before {
-    background-color: rgba(0, 0, 0, 0.5); /* Puedes ajustar el color y la opacidad aquí */
-}
-.tarjeta-hover:hover a{
-    opacity: 1;
-}
-.tarjeta-hover:hover .contenedor-img-logo{
-    opacity: 1;
-}
+
 /* =====================================*/
 
-.descripcion{
+.descripcion {
     text-align: center;
     margin-top: 1.5rem;
 }
-.descripcion p{
+
+.descripcion p {
     font-size: 28px;
     color: black;
     font-weight: 500;
 }
-.descripcion span{
+
+.descripcion span {
     font-size: 20px;
 }
+
 /* =============== swiper slide =============== */
-.galeria-proyectos .swiper-slide{
+.galeria-proyectos .swiper-slide {
     justify-content: center;
     display: flex;
     border-radius: 1.2rem !important;
 }
 
-/* ======================= BOTONES SWIPER JS ============================= */ 
-.swiper-button-next, .swiper-rtl .swiper-button-prev {
+/* ======================= BOTONES SWIPER JS ============================= */
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
     right: var(--swiper-navigation-sides-offset, 10px);
     left: auto;
 }
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
     content: 'next';
     margin-left: 0.2rem;
 }
-.swiper-button-prev.swiper-button, .swiper-button-next.swiper-button-disabled {
+
+.swiper-button-prev.swiper-button,
+.swiper-button-next.swiper-button-disabled {
     opacity: 0.35;
     cursor: auto;
     pointer-events: none;
 }
-.swiper-button-prev, .swiper-rtl .swiper-button-next {
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
     left: var(--swiper-navigation-sides-offset, 10px);
     right: auto;
 }
-.swiper-button-prev, .swiper-button-next {
+
+.swiper-button-prev,
+.swiper-button-next {
     position: absolute;
     top: var(--swiper-navigation-top-offset, 40%);
     width: 2rem;
@@ -140,11 +162,15 @@
     background: #343a40;
     border-radius: 50%;
 }
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
     content: 'prev';
     margin-right: 0.2rem;
 }
-.swiper-button-prev:after, .swiper-button-next:after {
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
     font-family: swiper-icons;
     font-size: var(--swiper-navigation-size);
     text-transform: none !important;
@@ -152,16 +178,70 @@
     font-variant: initial;
     line-height: 1;
 }
+
 /* ======================= BOTONES SWIPER JS ============================= */
 
-@media (max-width: 600px){
-    .contenedor-img-proyecto{
+@media (max-width: 600px) {
+    .contenedor-img-proyecto {
         height: 7em;
     }
-    .descripcion p{
+
+    .descripcion p {
         font-size: 20px;
     }
-    .tarjeta-proyecto{
+
+    .tarjeta-proyecto {
         width: 20rem;
     }
 }
+
+
+@media (min-width: 768px ) {
+    .tarjeta-hover:hover .contenedor-img-proyecto::before {
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+    }
+    
+    .tarjeta-hover:hover a {
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+    }
+    
+    .tarjeta-hover:hover .contenedor-img-logo{
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+    }
+}
+@media (max-width: 767px) {
+
+    .tarjeta-hover.clicked .contenedor-img-proyecto::before {
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+    }
+
+    .tarjeta-hover.clicked a {
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+    }
+
+    .tarjeta-hover.clicked .contenedor-img-logo{
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+    }
+}
+
+/*
+    .tarjeta-hover:hover .contenedor-img-proyecto::before {
+        background-color: rgba(0, 0, 0, 0.5);  Puedes ajustar el color y la opacidad aquí
+    }
+    .tarjeta-hover:hover a{
+        opacity: 1;
+    }
+    .tarjeta-hover:hover .contenedor-img-logo{
+        opacity: 1;
+    }
+*/
