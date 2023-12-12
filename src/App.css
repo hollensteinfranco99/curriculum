@@ -47,7 +47,7 @@ h2 {
     width: 100%;
     height: 100%;
     color: white;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .contenedor-inicio {
