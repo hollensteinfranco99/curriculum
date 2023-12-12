@@ -15,29 +15,21 @@ const Proyectos = forwardRef((props, ref) => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     useEffect(() => {
+        const tarjetas = document.querySelectorAll(".tarjeta-hover");
+
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 768);
         };
 
-        const handleCardClick = (e) => {
-            const tarjeta = e.currentTarget;
-            tarjeta.classList.toggle('clicked');
-            console.log(tarjeta);
-        };
-
-        const tarjetas = document.querySelectorAll(".tarjeta-hover");
-
-        tarjetas.forEach(tarjeta => {
-            tarjeta.addEventListener('click', handleCardClick);
+        // RESIZE
+        window.addEventListener('resize', () => {
+            handleResize();
         });
 
-        window.addEventListener('resize', handleResize);
-
         return () => {
-            tarjetas.forEach(tarjeta => {
-                tarjeta.removeEventListener('click', handleCardClick);
+            window.removeEventListener('resize', () => {
+                handleResize();
             });
-            window.removeEventListener('resize', handleResize);
         };
     }, []);
 
@@ -159,9 +151,3 @@ const Proyectos = forwardRef((props, ref) => {
 });
 
 export default Proyectos;
-
-
-/*
-                ) : (}
-
-*/

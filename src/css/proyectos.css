@@ -216,18 +216,18 @@
 }
 @media (max-width: 767px) {
 
-    .tarjeta-hover.clicked .contenedor-img-proyecto::before {
-        background-color: rgba(0, 0, 0, 0.5);
+    .tarjeta-hover .contenedor-img-proyecto::before {
+        background-color: rgba(0, 0, 0, 0.5) !important;
         z-index: 2;
     }
 
-    .tarjeta-hover.clicked a {
+    .tarjeta-hover a {
         opacity: 1;
         visibility: visible;
         z-index: 5;
     }
 
-    .tarjeta-hover.clicked .contenedor-img-logo{
+    .tarjeta-hover .contenedor-img-logo{
         opacity: 1;
         visibility: visible;
         z-index: 5;
