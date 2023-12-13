@@ -34,7 +34,7 @@ const Navegador = (props) => {
                         <button onClick={() => desplegarMenu()} className='btn-cerrar-menu'>
                             <FontAwesomeIcon className='me-1' icon={faXmark} />
                         </button>
-                        <li onClick={() => inidiceBuscar(props.refsLista.inicio)} className='li-opc'>Ianicio</li>
+                        <li onClick={() => inidiceBuscar(props.refsLista.inicio)} className='li-opc'>Inicio</li>
                         <li onClick={() => inidiceBuscar(props.refsLista.skills)} className='li-opc'>Skills</li>
                         <li onClick={() => inidiceBuscar(props.refsLista.proyectos)} className='li-opc'>Proyectos</li>
                         <li onClick={() => inidiceBuscar(props.refsLista.contacto)} className='li-opc'>Contacto</li>
