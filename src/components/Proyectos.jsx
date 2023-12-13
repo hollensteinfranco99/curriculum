@@ -49,7 +49,8 @@ const Proyectos = forwardRef((props, ref) => {
                         }}
                         modules={[Navigation]}
                         className="galeria-proyectos"
-                    >
+                        allowTouchMove={false}
+                        >
                         {/* ======================================================= */}
                         <SwiperSlide>
                             <article className='tarjeta-proyecto'>

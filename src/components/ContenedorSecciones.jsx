@@ -28,7 +28,7 @@ const ContenedorSecciones = (props) => {
     
             let isTouching = false;
             let startTouchY = 0;
-            const sensitivity = 20; // Ajusta la sensibilidad según tus necesidades
+            const sensitivity = 1; // Ajusta la sensibilidad según tus necesidades
     
             const handleTouchStart = (event) => {
                 isTouching = true;
