@@ -25,50 +25,50 @@ const ContenedorSecciones = (props) => {
     useEffect(() => {
         const scrollear = () => {
             const container = document.querySelector('.scroll-container');
-
+    
             let isTouching = false;
             let startTouchY = 0;
-
+            const sensitivity = 20; // Ajusta la sensibilidad según tus necesidades
+    
             const handleTouchStart = (event) => {
-                event.preventDefault();
                 isTouching = true;
                 startTouchY = event.touches[0].clientY;
             };
-
+    
             const handleTouchMove = (event) => {
                 if (!isTouching) return;
                 event.preventDefault();
-
+    
                 const currentTouchY = event.touches[0].clientY;
-                const delta = startTouchY - currentTouchY;
-
+                const delta = (startTouchY - currentTouchY) * sensitivity;
+    
                 container.scrollBy({
                     top: delta,
                     behavior: 'smooth',
                 });
-
+    
                 startTouchY = currentTouchY;
             };
-
+    
             const handleTouchEnd = () => {
                 isTouching = false;
             };
-
+    
             const handleWheel = (event) => {
                 event.preventDefault();
                 const delta = event.deltaY;
-
+    
                 container.scrollBy({
                     top: delta,
                     behavior: 'smooth',
                 });
             };
-
+    
             container.addEventListener('touchstart', handleTouchStart);
             container.addEventListener('touchmove', handleTouchMove);
             container.addEventListener('touchend', handleTouchEnd);
             container.addEventListener('wheel', handleWheel);
-
+    
             return () => {
                 container.removeEventListener('touchstart', handleTouchStart);
                 container.removeEventListener('touchmove', handleTouchMove);
@@ -76,7 +76,7 @@ const ContenedorSecciones = (props) => {
                 container.removeEventListener('wheel', handleWheel);
             };
         };
-
+    
         scrollear();
     }, []);
 
