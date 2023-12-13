@@ -62,7 +62,7 @@ const Proyectos = forwardRef((props, ref) => {
                                         <div className='contenedor-img-logo'>
                                             <img src={imagenes.primelogo} alt="" />
                                         </div>
-                                        <a href='https://655fba09c3392c0008445b71--peliculas-primevideo.netlify.app/' target='_blank' className='btn btn-danger'>Ver sitio</a>
+                                        <a href='https://peliculas-primevideo.netlify.app/' target='_blank' className='btn btn-danger'>Ver sitio</a>
                                         <a href='https://github.com/hollensteinfranco99/peliculas-frontend.git' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>codigo</a>
                                     </div>
                                 </section>
@@ -110,7 +110,7 @@ const Proyectos = forwardRef((props, ref) => {
                                         <div className='contenedor-img-logo'>
                                             <img src={imagenes.primelogo} alt="" />
                                         </div>
-                                        <a href='https://655fba09c3392c0008445b71--peliculas-primevideo.netlify.app/' target='_blank' className='btn btn-danger'>Ver sitio</a>
+                                        <a href='https://peliculas-primevideo.netlify.app/' target='_blank' className='btn btn-danger'>Ver sitio</a>
                                         <a href='https://github.com/hollensteinfranco99/peliculas-frontend.git' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>codigo</a>
                                     </div>
                                 </section>
