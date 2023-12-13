@@ -2,25 +2,36 @@
     font-family: 'fuente-1';
     src: url('fonts/DOMCO.otf') format('opentype');
 }
+
 @font-face {
-    font-family: 'fuenteLoader'; /* Nombre de la fuente que quieras asignar */
-    src: url('fonts/JMH\ Savage.otf') format('opentype'); /* Ruta correcta al archivo OTF */
+    font-family: 'fuenteLoader';
+    /* Nombre de la fuente que quieras asignar */
+    src: url('fonts/JMH\ Savage.otf') format('opentype');
+    /* Ruta correcta al archivo OTF */
 }
+
 @font-face {
     font-family: 'fuente-2';
     src: url('fonts/Dooodleistabold.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'pixie';
     src: url('fonts/DoctorGlitch.otf') format('opentype');
 }
-h1,h2,h3{
+
+h1,
+h2,
+h3 {
     font-family: 'fuente-1';
 }
-p,span{
+
+p,
+span {
     font-family: 'fuente-2';
     cursor: default !important;
 }
+
 .contenedor-principal {
     width: 100%;
 }
@@ -35,7 +46,7 @@ body {
 
 h2 {
     font-family: 'fuente-1';
-    font-size: 70px;
+    font-size: 5rem;
 }
 
 .contenedor-contacto,
@@ -70,20 +81,24 @@ h2 {
     background-color: #4C5056;
     /*background-color: rgb(123,203,202);*/
 }
-/* =========== scroll =============== */ 
+
+/* =========== scroll =============== */
 ::-webkit-scrollbar {
     display: none;
 }
+
 .scroll-container {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     height: 100vh;
     scroll-behavior: smooth;
 }
+
 .scroll-item {
     height: 100vh;
     scroll-snap-align: start;
 }
+
 /* ============================ */
 .navegador {
     z-index: 10;
@@ -95,8 +110,10 @@ h2 {
     border-bottom: 1px solid #F6EDD8;
     display: flex;
 }
+
 /* =========== boton hamburguesa ========== */
-.btn-cerrar-menu,.btn-abrir-menu{
+.btn-cerrar-menu,
+.btn-abrir-menu {
     opacity: 0;
     visibility: hidden;
     margin-left: auto;
@@ -104,7 +121,9 @@ h2 {
     border: 0;
     margin: 5px 20px 5px auto;
     color: white;
+    font-size: 1.5rem;
 }
+
 /* ======================================= */
 
 .lista-opc {
@@ -112,7 +131,8 @@ h2 {
     padding: 0;
     margin: 0;
 }
-.nav-list.visible{
+
+.nav-list.visible {
     opacity: 1;
     visibility: visible;
     transition: all 0.2s ease-in;
@@ -133,32 +153,11 @@ h2 {
 .li-opc:hover {
     background-color: rgb(79, 79, 79);
 }
+
 /* Sweet Alert */
-.swal2-html-container{
+.swal2-html-container {
     font-size: 1.7rem !important;
 }
-
-@media (max-width: 700px){
-    .btn-abrir-menu,.btn-cerrar-menu{
-        opacity: 1;
-        visibility: visible;
-    }
-    .nav-list{
-        opacity: 0;
-        visibility: hidden;
-    }
-    .nav-list{
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        background-color: #0a0802;
-    }
-    .lista-opc{
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
 
 @keyframes scroll {
     0% {
@@ -169,3 +168,44 @@ h2 {
         transform: translateY(-100%);
     }
 }
+@media (max-width: 760px) {
+
+    .btn-abrir-menu,
+    .btn-cerrar-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #0a0802;
+    }
+
+    .lista-opc {
+        flex-direction: column;
+        text-align: center;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 1.6rem !important;
+    }
+}
+    /* Media query para pantallas medianas (768px a 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/* Media query para pantallas grandes (1024px en adelante) */
+@media screen and (min-width: 1024px) {}

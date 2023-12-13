@@ -27,7 +27,7 @@
     text-align: center;
     left: 20%;
     bottom: -3rem;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 .contenedor-img-skills{
     width: 6rem;
@@ -60,7 +60,7 @@
 }
 .sobre-mi p{
     margin: 5rem 0px;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 800;
     line-height: 2.2rem;
 }
@@ -79,9 +79,13 @@
     }
     .cont-skills{
         width: 100%;
-        padding: 7rem 0;
+        padding: 4rem 0;
     }
     .sobre-mi{
         width: 100%;
+    }
+    .contenedor-img-skills{
+        width: 4rem;
+        height: 4rem;
     }
 }

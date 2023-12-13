@@ -58,7 +58,7 @@
 
 .informacion-tarjeta a {
     margin: 1.3rem 0rem 0rem 2.3rem;
-    font-size: 23px;
+    font-size: 1.6rem;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease-in;
@@ -103,13 +103,13 @@
 }
 
 .descripcion p {
-    font-size: 28px;
+    font-size: 1.8rem;
     color: black;
     font-weight: 500;
 }
 
 .descripcion span {
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 /* =============== swiper slide =============== */
@@ -186,10 +186,6 @@
         height: 7em;
     }
 
-    .descripcion p {
-        font-size: 20px;
-    }
-
     .tarjeta-proyecto {
         width: 20rem;
     }
@@ -213,6 +209,7 @@
         visibility: visible;
         z-index: 5;
     }
+
 }
 @media (max-width: 767px) {
 
@@ -225,6 +222,8 @@
         opacity: 1;
         visibility: visible;
         z-index: 5;
+        font-size: 1rem;
+        margin: 0.3rem 2rem 0rem 1rem;
     }
 
     .tarjeta-hover .contenedor-img-logo{
@@ -232,16 +231,13 @@
         visibility: visible;
         z-index: 5;
     }
+    .contenedor-img-logo {
+        width: 7rem;
+    }
+    .descripcion p {
+        font-size: 1.4rem !important;
+    }
+    .descripcion span {
+        font-size: 0.8rem;
+    }
 }
-
-/*
-    .tarjeta-hover:hover .contenedor-img-proyecto::before {
-        background-color: rgba(0, 0, 0, 0.5);  Puedes ajustar el color y la opacidad aquí
-    }
-    .tarjeta-hover:hover a{
-        opacity: 1;
-    }
-    .tarjeta-hover:hover .contenedor-img-logo{
-        opacity: 1;
-    }
-*/
