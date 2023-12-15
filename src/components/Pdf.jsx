@@ -1,16 +1,21 @@
-import React, { useEffect } from 'react';
+import React, { Component } from 'react';
 import '../css/contacto.css';
 
-const Pdf = () => {
-    useEffect(() => {
-        if (typeof window.orientation !== 'undefined') {
+class Pdf extends Component {
+    
+    componentDidMount() {
+
+        const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+        if (isMobileDevice) {
             document.getElementById("enlace-pdf").click();
             window.close();
         }
-    }, []);
+    }
 
-    return (
-        <div className='pdf'>
+    render() {
+        return (
+            <div className='pdf'>
             <object
                 data={require('../pdf/HollensteinFrancoCV.pdf')}
                 type="application/pdf"
@@ -27,7 +32,11 @@ const Pdf = () => {
                 </a>
             </object>
         </div>
-    );
-};
+        );
+    }
+}
 
 export default Pdf;
+
+
+
