@@ -94,7 +94,7 @@ const Contacto = forwardRef((props, ref) => {
     }
     const DescargarPdf = () =>{
         const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-        const pdfUrl = '/pdf/HollensteinFrancoCV.pdf';
+        const pdfUrl = '../pdf/HollensteinFrancoCV.pdf';
 
         if (isMobileDevice) {
             const link = document.createElement('a');
@@ -111,7 +111,7 @@ const Contacto = forwardRef((props, ref) => {
     return (
         <section data-section="contacto" ref={ref} className='scroll-item contenedor-contacto'>
             <div className='titulo-contacto'>
-                <h2>Contactso</h2>
+                <h2>Contacto</h2>
                 <p>Gracias por llegar hasta aca!</p>
             </div>
             <section className='seccion-contacto row'>
