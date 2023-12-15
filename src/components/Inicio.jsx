@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useRef, forwardRef } from 'react';
+import React, {useRef, forwardRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/Inicio.css';
 import { start } from '../sketch.js'; // Ajusta la ruta según la ubicación de tu archivo JS
@@ -13,16 +13,11 @@ const Inicio = forwardRef((props, ref) => {
         }
     };
 
-    useEffect(() => {
-        // Manejar el cambio de tamaño al montar el componente
-        //handleResize();
-    }, []);
-
     return (
         <section ref={ref} id='inicio' className='scroll-item contenedor-inicio'>
             <article className='presentacion' aria-label='nombre'>
                 <div>
-                    <h3>aHola, soy Hollenstein Franco,</h3>
+                    <h3>Hola, soy Hollenstein Franco,</h3>
                     <h2>FullStack Developer</h2>
                 </div>
             </article>
