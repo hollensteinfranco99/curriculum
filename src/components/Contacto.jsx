@@ -99,7 +99,7 @@ const Contacto = forwardRef((props, ref) => {
         if (isMobileDevice) {
             alert("fas");
             const link = document.createElement('a');
-            link.href = pdfUrl;
+            link.href = require(pdfUrl);
             link.target = '_blank';
             link.rel = 'noopener noreferrer'; 
             link.download = 'HollensteinFrancoCV.pdf';
