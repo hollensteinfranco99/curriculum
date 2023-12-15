@@ -97,15 +97,12 @@ const Contacto = forwardRef((props, ref) => {
         const pdfUrl = '../pdf/HollensteinFrancoCV.pdf';
 
         if (isMobileDevice) {
-            alert("fas");
             const link = document.createElement('a');
             link.href = require(pdfUrl);
-            link.target = '_blank';
             link.rel = 'noopener noreferrer'; 
             link.download = 'HollensteinFrancoCV.pdf';
             document.body.appendChild(link);
             link.click();
-            document.body.removeChild(link);
         } else {
             // Abre la página en dispositivos no móviles
             window.open('/pdf', '_blank');
