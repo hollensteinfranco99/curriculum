@@ -35,7 +35,7 @@ const Preloader = () => {
         });
 
         gsap.to('.bar', 1.6, {
-            delay: 1,
+            delay: 0.4,
             height: 0,
             stagger: {
                 amount: 0.5,

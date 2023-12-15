@@ -138,10 +138,10 @@ const Contacto = forwardRef((props, ref) => {
                 <a href='https://wa.me/543815578922' target='_blank' className='btn btn-success'>
                     <FontAwesomeIcon className='me-1' icon={faWhatsapp} />
                     WhatsApp</a>
-                <a className='btn btn-info'>
+                <a href='https://www.linkedin.com/in/franco-david-hollenstein-689646161/' target='_blank' className='btn btn-info'>
                     <FontAwesomeIcon className='me-1' icon={faLinkedin} />
                     Linkedin</a>
-                    <a className='btn btn-danger'>
+                    <a className='btn btn-danger' href='./pdf' target='_blank'>
                     <FontAwesomeIcon className='me-1' icon={faFilePdf} />
                     Curriculum</a>
             </section>
