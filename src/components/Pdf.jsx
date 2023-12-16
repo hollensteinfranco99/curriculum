@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../css/contacto.css';
 
-const Pdf = (props) => {
+const Pdf = () => {
 
 
     return (

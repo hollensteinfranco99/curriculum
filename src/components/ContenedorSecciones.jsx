@@ -1,4 +1,4 @@
-import React, { forwardRef, useLayoutEffect, useState, useEffect } from 'react';
+import React, { useLayoutEffect, useState, useEffect } from 'react';
 import Inicio from './Inicio';
 import Proyectos from './Proyectos';
 import Contacto from './Contacto';

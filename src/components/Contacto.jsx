@@ -1,9 +1,9 @@
-import React, { useEffect, forwardRef, useRef, useState } from 'react';
+import React, { forwardRef, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/contacto.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faFilePdf, faSquarePhone } from '@fortawesome/free-solid-svg-icons';
+import {  faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
@@ -11,7 +11,6 @@ import 'sweetalert2/dist/sweetalert2.min.css';
 const Contacto = forwardRef((props, ref) => {
 
     const form = useRef();
-    const [elementoPdf, setElementoPdf] = useState(null);
     const sendEmail = (e) => {
         e.preventDefault();
         let asunto = document.getElementById("asunto");
@@ -94,32 +93,27 @@ const Contacto = forwardRef((props, ref) => {
     }
     const DescargarPdf = async () => {
         const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-        const pdfUrl = '../pdf/HollensteinFrancoCV.pdf';
-        let link = document.getElementById("enlace-pdf")
+
         if (isMobileDevice) {
             try {
-                /*const response = await fetch(pdfUrl);
+                const pdfUrl = "/documento.pdf"; // Ruta relativa desde la raíz del servidor
 
-                if (!response.ok) {
-                    throw new Error(`Error al descargar el archivo PDF: ${response.status} ${response.statusText}`);
-                }
-
-                const blob = await response.blob();
-                const blobUrl = URL.createObjectURL(blob);*/
-                
-                link.href = 'pdf/HollensteinFrancoCV';
-                link.rel = 'noopener noreferrer';
-                link.download = 'HollensteinFrancoCV.pdf';
-
+                const link = document.createElement('a');
+                link.href = pdfUrl;
+                link.target = '_blank';
+                link.download = 'HollensteinFrancoCV.pdf'; // Nombre que tendrá el archivo al descargarse
+                document.body.appendChild(link);
                 link.click();
+                document.body.removeChild(link);
+    
             } catch (error) {
                 console.error('Error al descargar el archivo PDF:', error);
             }
-        } else {
+        }else {
             // Abre la página en dispositivos no móviles
             window.open('/pdf', '_blank');
         }
-    }
+    };
     return (
         <section data-section="contacto" ref={ref} className='scroll-item contenedor-contacto'>
             <div className='titulo-contacto'>

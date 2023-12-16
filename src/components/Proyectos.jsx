@@ -1,4 +1,4 @@
-import React, { Fragment, forwardRef, useEffect, useState } from 'react';
+import React, { forwardRef, useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
@@ -15,7 +15,6 @@ const Proyectos = forwardRef((props, ref) => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     useEffect(() => {
-        const tarjetas = document.querySelectorAll(".tarjeta-hover");
 
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 768);
