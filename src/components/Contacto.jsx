@@ -61,7 +61,7 @@ const Contacto = forwardRef((props, ref) => {
         nombre.className = "form-control";
     }
     const validarCampos = (input) => {
-        if (input.value.trim() != '') {
+        if (input.value.trim() !== '') {
             input.className = 'form-control is-valid';
             return true;
         } else {
@@ -83,7 +83,7 @@ const Contacto = forwardRef((props, ref) => {
         }
     }
     const validarMensaje = (input) => {
-        if (input.value.trim() != '' && input.value.trim().length > 10) {
+        if (input.value.trim() !== '' && input.value.trim().length > 10) {
             input.className = 'form-control is-valid';
             return true;
         } else {
@@ -101,6 +101,7 @@ const Contacto = forwardRef((props, ref) => {
                 const link = document.createElement('a');
                 link.href = pdfUrl;
                 link.target = '_blank';
+                link.rel = "noopener noreferrer";
                 link.download = 'HollensteinFrancoCV.pdf'; // Nombre que tendrá el archivo al descargarse
                 document.body.appendChild(link);
                 link.click();
@@ -156,10 +157,10 @@ const Contacto = forwardRef((props, ref) => {
             </section>
             <section className='formas-contacto' aria-label='formas-contacto'>
 
-                <a href='https://wa.me/543815578922' target='_blank' className='btn btn-success'>
+                <a rel="noopener noreferrer" href='https://wa.me/543815578922' target='_blank' className='btn btn-success'>
                     <FontAwesomeIcon className='me-1' icon={faWhatsapp} />
                     WhatsApp</a>
-                <a href='https://www.linkedin.com/in/franco-david-hollenstein-689646161/' target='_blank' className='btn btn-info'>
+                <a rel="noopener noreferrer" href='https://www.linkedin.com/in/franco-david-hollenstein-689646161/' target='_blank' className='btn btn-info'>
                     <FontAwesomeIcon className='me-1' icon={faLinkedin} />
                     Linkedin</a>
                 <a className='btn btn-danger' id='enlace-pdf' onClick={() => { DescargarPdf() }}>

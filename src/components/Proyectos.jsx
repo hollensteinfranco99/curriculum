@@ -61,8 +61,8 @@ const Proyectos = forwardRef((props, ref) => {
                                         <div className='contenedor-img-logo'>
                                             <img src={imagenes.primelogo} alt="" />
                                         </div>
-                                        <a href='https://peliculas-primevideo.netlify.app/' target='_blank' className='btn btn-danger'>Ver sitio</a>
-                                        <a href='https://github.com/hollensteinfranco99/peliculas-frontend.git' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>codigo</a>
+                                        <a rel="noopener noreferrer" href='https://peliculas-primevideo.netlify.app/' target='_blank' className='btn btn-danger'>Ver sitio</a>
+                                        <a rel="noopener noreferrer" href='https://github.com/hollensteinfranco99/peliculas-frontend.git' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>codigo</a>
                                     </div>
                                 </section>
                                 <div className='descripcion'>
@@ -85,8 +85,8 @@ const Proyectos = forwardRef((props, ref) => {
                                         <div className='contenedor-img-logo'>
                                             <h3 className='pixie-logo'>Pixie Games</h3>
                                         </div>
-                                        <a href='https://cosmic-gumdrop-5c7ec3.netlify.app/' target='_blank' className='btn btn-danger'>Ver sitio</a>
-                                        <a href='https://github.com/hollensteinfranco99/pixiegames' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>codigo</a>
+                                        <a rel="noopener noreferrer" href='https://cosmic-gumdrop-5c7ec3.netlify.app/' target='_blank' className='btn btn-danger'>Ver sitio</a>
+                                        <a rel="noopener noreferrer" href='https://github.com/hollensteinfranco99/pixiegames' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>codigo</a>
                                     </div>
                                 </section>
                                 <div className='descripcion'>
@@ -109,8 +109,8 @@ const Proyectos = forwardRef((props, ref) => {
                                         <div className='contenedor-img-logo'>
                                             <img src={imagenes.primelogo} alt="" />
                                         </div>
-                                        <a href='https://peliculas-primevideo.netlify.app/' target='_blank' className='btn btn-danger'>Ver sitio</a>
-                                        <a href='https://github.com/hollensteinfranco99/peliculas-frontend.git' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>codigo</a>
+                                        <a rel="noopener noreferrer" href='https://peliculas-primevideo.netlify.app/' target='_blank' className='btn btn-danger'>Ver sitio</a>
+                                        <a rel="noopener noreferrer" href='https://github.com/hollensteinfranco99/peliculas-frontend.git' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>codigo</a>
                                     </div>
                                 </section>
                                 <div className='descripcion'>
@@ -130,8 +130,8 @@ const Proyectos = forwardRef((props, ref) => {
                                         <div className='contenedor-img-logo'>
                                             <h3 className='pixie-logo'>Pixie Games</h3>
                                         </div>
-                                        <a href='https://cosmic-gumdrop-5c7ec3.netlify.app/' target='_blank' className='btn btn-danger'>Ver sitio</a>
-                                        <a href='https://github.com/hollensteinfranco99/pixiegames' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>codigo</a>
+                                        <a rel="noopener noreferrer" href='https://cosmic-gumdrop-5c7ec3.netlify.app/' target='_blank' className='btn btn-danger'>Ver sitio</a>
+                                        <a rel="noopener noreferrer" href='https://github.com/hollensteinfranco99/pixiegames' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>codigo</a>
                                     </div>
                                 </section>
                                 <div className='descripcion'>
