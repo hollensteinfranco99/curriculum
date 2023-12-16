@@ -95,13 +95,13 @@ const Contacto = forwardRef((props, ref) => {
     const DescargarPdf = () =>{
         const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         const pdfUrl = '../pdf/HollensteinFrancoCV.pdf';
+        let link = document.getElementById("enlace-pdf");
 
         if (isMobileDevice) {
-            const link = document.createElement('a');
-            link.href = require(pdfUrl);
+            //const link = document.createElement('a');
+            link.href = pdfUrl;
             link.rel = 'noopener noreferrer'; 
             link.download = 'HollensteinFrancoCV.pdf';
-            document.body.appendChild(link);
             link.click();
         } else {
             // Abre la página en dispositivos no móviles
@@ -156,7 +156,7 @@ const Contacto = forwardRef((props, ref) => {
                 <a href='https://www.linkedin.com/in/franco-david-hollenstein-689646161/' target='_blank' className='btn btn-info'>
                     <FontAwesomeIcon className='me-1' icon={faLinkedin} />
                     Linkedin</a>
-                <a className='btn btn-danger'  onClick={()=>{DescargarPdf()}}>
+                <a className='btn btn-danger' id='enlace-pdf'  onClick={()=>{DescargarPdf()}}>
                     <FontAwesomeIcon className='me-1' icon={faFilePdf} />
                     Curriculum</a>
             </section>
