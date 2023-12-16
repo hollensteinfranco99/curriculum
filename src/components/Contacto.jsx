@@ -105,7 +105,7 @@ const Contacto = forwardRef((props, ref) => {
                 // Crear un enlace temporal y simular clic para iniciar la descarga
                 const link = document.createElement('a');
                 link.href = blobUrl;
-                link.download = 'HollensteinFrancoCV.pdf';
+                //link.download = 'HollensteinFrancoCV.pdf';
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
