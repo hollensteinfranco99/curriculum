@@ -1,4 +1,4 @@
-import React, { useEffect, forwardRef, useRef,useState } from 'react';
+import React, { useEffect, forwardRef, useRef, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/contacto.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -92,17 +92,25 @@ const Contacto = forwardRef((props, ref) => {
             return false;
         }
     }
-    const DescargarPdf = () =>{
+    const DescargarPdf = async () => {
         const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         const pdfUrl = '../pdf/HollensteinFrancoCV.pdf';
         let link = document.getElementById("enlace-pdf");
 
         if (isMobileDevice) {
-            //const link = document.createElement('a');
-            link.href = pdfUrl;
-            link.rel = 'noopener noreferrer'; 
-            link.download = 'HollensteinFrancoCV.pdf';
-            link.click();
+            try {
+                const response = await fetch(pdfUrl);
+                const blob = await response.blob();
+                const blobUrl = URL.createObjectURL(blob);
+
+                link.href = blobUrl;
+                link.rel = 'noopener noreferrer';
+                link.download = 'HollensteinFrancoCV.pdf';
+
+                link.click();
+            } catch (error) {
+                console.error('Error al descargar el archivo PDF:', error);
+            }
         } else {
             // Abre la página en dispositivos no móviles
             window.open('/pdf', '_blank');
@@ -156,7 +164,7 @@ const Contacto = forwardRef((props, ref) => {
                 <a href='https://www.linkedin.com/in/franco-david-hollenstein-689646161/' target='_blank' className='btn btn-info'>
                     <FontAwesomeIcon className='me-1' icon={faLinkedin} />
                     Linkedin</a>
-                <a className='btn btn-danger' id='enlace-pdf'  onClick={()=>{DescargarPdf()}}>
+                <a className='btn btn-danger' id='enlace-pdf' onClick={() => { DescargarPdf() }}>
                     <FontAwesomeIcon className='me-1' icon={faFilePdf} />
                     Curriculum</a>
             </section>
