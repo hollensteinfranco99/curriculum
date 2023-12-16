@@ -107,7 +107,7 @@ const Contacto = forwardRef((props, ref) => {
                 const blob = await response.blob();
                 const blobUrl = URL.createObjectURL(blob);
 
-                link.href = blobUrl;
+                link.href = 'pdf/HollensteinFrancoCV';
                 link.rel = 'noopener noreferrer';
                 link.download = 'HollensteinFrancoCV.pdf';
 
