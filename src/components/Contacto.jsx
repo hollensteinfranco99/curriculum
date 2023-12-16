@@ -99,17 +99,19 @@ const Contacto = forwardRef((props, ref) => {
         if (isMobileDevice) {
             try {
                 const response = await fetch(pdfUrl);
+
+                if (!response.ok) {
+                    throw new Error(`Error al descargar el archivo PDF: ${response.status} ${response.statusText}`);
+                }
+
                 const blob = await response.blob();
                 const blobUrl = URL.createObjectURL(blob);
 
-                // Crear un enlace temporal y simular clic para iniciar la descarga
-                const link = document.createElement('a');
                 link.href = blobUrl;
-                //link.download = 'HollensteinFrancoCV.pdf';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
+                link.rel = 'noopener noreferrer';
+                link.download = 'HollensteinFrancoCV.pdf';
 
+                link.click();
             } catch (error) {
                 console.error('Error al descargar el archivo PDF:', error);
             }
