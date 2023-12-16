@@ -95,7 +95,7 @@ const Contacto = forwardRef((props, ref) => {
     const DescargarPdf = async () => {
         const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         const pdfUrl = '../pdf/HollensteinFrancoCV.pdf';
-
+        let link = document.getElementById("enlace-pdf")
         if (isMobileDevice) {
             try {
                 const response = await fetch(pdfUrl);
