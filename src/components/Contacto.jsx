@@ -98,15 +98,15 @@ const Contacto = forwardRef((props, ref) => {
         let link = document.getElementById("enlace-pdf")
         if (isMobileDevice) {
             try {
-                const response = await fetch(pdfUrl);
+                /*const response = await fetch(pdfUrl);
 
                 if (!response.ok) {
                     throw new Error(`Error al descargar el archivo PDF: ${response.status} ${response.statusText}`);
                 }
 
                 const blob = await response.blob();
-                const blobUrl = URL.createObjectURL(blob);
-
+                const blobUrl = URL.createObjectURL(blob);*/
+                
                 link.href = 'pdf/HollensteinFrancoCV';
                 link.rel = 'noopener noreferrer';
                 link.download = 'HollensteinFrancoCV.pdf';
