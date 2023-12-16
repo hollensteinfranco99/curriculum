@@ -9,7 +9,7 @@ const Inicio = forwardRef((props, ref) => {
         <section ref={ref} id='inicio' className='scroll-item contenedor-inicio'>
             <article className='presentacion' aria-label='nombre'>
                 <div>
-                    <h3>Hosla, soy Hollenstein Franco,</h3>
+                    <h3>Hola, soy Hollenstein Franco,</h3>
                     <h2>FullStack Developer</h2>
                 </div>
             </article>
