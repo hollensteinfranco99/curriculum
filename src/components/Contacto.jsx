@@ -151,7 +151,7 @@ const Contacto = forwardRef((props, ref) => {
                 </article>
                 <article className='mapa col-lg-6 col-md-6 col-sm-12' aria-label='mapa'>
                     <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113927.15975832954!2d-65.30499574754882!3d-26.832835032918194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1700632037750!5m2!1ses!2sar" loading="lazy"></iframe>
+                        <iframe title="Domicilio" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113927.15975832954!2d-65.30499574754882!3d-26.832835032918194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1700632037750!5m2!1ses!2sar" loading="lazy"></iframe>
                     </div>
                 </article>
             </section>
@@ -163,7 +163,7 @@ const Contacto = forwardRef((props, ref) => {
                 <a rel="noopener noreferrer" href='https://www.linkedin.com/in/franco-david-hollenstein-689646161/' target='_blank' className='btn btn-info'>
                     <FontAwesomeIcon className='me-1' icon={faLinkedin} />
                     Linkedin</a>
-                <a className='btn btn-danger' id='enlace-pdf' onClick={() => { DescargarPdf() }}>
+                <a href="#" className='btn btn-danger' id='enlace-pdf' onClick={() => { DescargarPdf() }}>
                     <FontAwesomeIcon className='me-1' icon={faFilePdf} />
                     Curriculum</a>
             </section>
