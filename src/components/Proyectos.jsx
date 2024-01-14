@@ -52,16 +52,49 @@ const Proyectos = forwardRef((props, ref) => {
                         >
                         {/* ======================================================= */}
                         <SwiperSlide>
+                        <article className='tarjeta-proyecto'>
+                                <section className='tarjeta-hover'>
+                                    <div className='contenedor-img-proyecto'>
+                                        <img src={imagenes.puntoDeVenta} alt="" />
+                                    </div>
+                                    <div className='informacion-tarjeta d-flex flex-column'>
+                                        <div className='d-flex justify-content-center'>
+                                        <h3 className='pixie-logo'>Punto de Venta</h3>
+                                        </div>
+                                        <a rel="noopener noreferrer" href='https://inquisitive-seahorse-13bed1.netlify.app/' target='_blank' className='btn btn-danger'>Ver sitio</a>
+
+                                        <article className='d-flex justify-content-center'>
+                                            <div className='me-2'>
+                                        <a rel="noopener noreferrer" href='https://github.com/hollensteinfranco99/peliculas-frontend.git' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>Frontend</a>
+                                            </div>
+                                            <div className='me-2'>
+                                        <a rel="noopener noreferrer" href='https://github.com/hollensteinfranco99/negocio-backend' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>Backend</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </section>
+                                <div className='descripcion'>
+                                    <p>La pagina es un punto de venta, donde podes realizar altas, bajas, modificar y consultar a una base de datos realizada con MongoDB</p>
+                                    <span className='btn btn-dark ms-1'>HTML</span>
+                                    <span className='btn btn-dark ms-1'>JAVASCRIPT</span>
+                                    <span className='btn btn-dark ms-1'>CSS</span>
+                                    <span className='btn btn-dark ms-1'>REACT</span>
+                                    <span className='btn btn-dark ms-1'>MongoDB</span>
+                                    <span className='btn btn-dark ms-1'>Bootstrap</span>
+                                </div>
+                            </article>
+                        </SwiperSlide>
+                        <SwiperSlide>
                             <article className='tarjeta-proyecto'>
                                 <section className='tarjeta-hover'>
                                     <div className='contenedor-img-proyecto'>
                                         <img src={imagenes.pelicula} alt="" />
                                     </div>
-                                    <div className='informacion-tarjeta'>
+                                    <div className='informacion-tarjeta d-flex flex-column'>
                                         <div className='contenedor-img-logo'>
                                             <img src={imagenes.primelogo} alt="" />
                                         </div>
-                                        <a rel="noopener noreferrer" href='https://peliculas-primevideo.netlify.app/' target='_blank' className='btn btn-danger'>Ver sitio</a>
+                                        <a rel="noopener noreferrer" href='https://peliculas-primevideo.netlify.app/' target='_blank' className='btn btn-danger my-2'>Ver sitio</a>
                                         <a rel="noopener noreferrer" href='https://github.com/hollensteinfranco99/peliculas-frontend.git' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>codigo</a>
                                     </div>
                                 </section>
@@ -81,11 +114,11 @@ const Proyectos = forwardRef((props, ref) => {
                                     <div className='contenedor-img-proyecto'>
                                         <img src={imagenes.pixie} alt="" />
                                     </div>
-                                    <div className='informacion-tarjeta'>
+                                    <div className='informacion-tarjeta d-flex flex-column'>
                                         <div className='contenedor-img-logo'>
                                             <h3 className='pixie-logo'>Pixie Games</h3>
                                         </div>
-                                        <a rel="noopener noreferrer" href='https://cosmic-gumdrop-5c7ec3.netlify.app/' target='_blank' className='btn btn-danger'>Ver sitio</a>
+                                        <a rel="noopener noreferrer" href='https://cosmic-gumdrop-5c7ec3.netlify.app/' target='_blank' className='btn btn-danger my-1'>Ver sitio</a>
                                         <a rel="noopener noreferrer" href='https://github.com/hollensteinfranco99/pixiegames' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>codigo</a>
                                     </div>
                                 </section>
@@ -100,16 +133,48 @@ const Proyectos = forwardRef((props, ref) => {
                     </Swiper>) : (
                     <>
                         <section className="galeria-proyectos">
+                        <article className='tarjeta-proyecto'>
+                                <section className='tarjeta-hover'>
+                                    <div className='contenedor-img-proyecto'>
+                                        <img src={imagenes.puntoDeVenta} alt="" />
+                                    </div>
+                                    <div className='informacion-tarjeta d-flex flex-column'>
+                                        <div className='contenedor-img-logo'>
+                                        <h3 className='pixie-logo'>Punto de Venta</h3>
+                                        </div>
+                                        <a rel="noopener noreferrer" href='https://inquisitive-seahorse-13bed1.netlify.app/' target='_blank' className='btn btn-danger'>Ver sitio</a>
+
+                                        <article className='d-flex justify-content-center'>
+                                            <div className='me-2'>
+                                        <a rel="noopener noreferrer" href='https://github.com/hollensteinfranco99/peliculas-frontend.git' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>Frontend</a>
+                                            </div>
+                                            <div className='me-2'>
+                                        <a rel="noopener noreferrer" href='https://github.com/hollensteinfranco99/negocio-backend' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>Backend</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </section>
+                                <div className='descripcion'>
+                                    <p>La pagina es un punto de venta, donde podes realizar altas, bajas, modificar y consultar a una base de datos realizada con MongoDB</p>
+                                    <span className='btn btn-dark ms-1'>HTML</span>
+                                    <span className='btn btn-dark ms-1'>JAVASCRIPT</span>
+                                    <span className='btn btn-dark ms-1'>CSS</span>
+                                    <span className='btn btn-dark ms-1'>REACT</span>
+                                    <span className='btn btn-dark ms-1'>MongoDB</span>
+                                    <span className='btn btn-dark ms-1'>Bootstrap</span>
+                                </div>
+                            </article>
+                            {/* ================================== */}
                             <article className='tarjeta-proyecto'>
                                 <section className='tarjeta-hover'>
                                     <div className='contenedor-img-proyecto'>
                                         <img src={imagenes.pelicula} alt="" />
                                     </div>
-                                    <div className='informacion-tarjeta'>
+                                    <div className='informacion-tarjeta d-flex flex-column'>
                                         <div className='contenedor-img-logo'>
                                             <img src={imagenes.primelogo} alt="" />
                                         </div>
-                                        <a rel="noopener noreferrer" href='https://peliculas-primevideo.netlify.app/' target='_blank' className='btn btn-danger'>Ver sitio</a>
+                                        <a rel="noopener noreferrer" href='https://peliculas-primevideo.netlify.app/' target='_blank' className='btn btn-danger my-2'>Ver sitio</a>
                                         <a rel="noopener noreferrer" href='https://github.com/hollensteinfranco99/peliculas-frontend.git' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>codigo</a>
                                     </div>
                                 </section>
@@ -126,11 +191,11 @@ const Proyectos = forwardRef((props, ref) => {
                                     <div className='contenedor-img-proyecto'>
                                         <img src={imagenes.pixie} alt="" />
                                     </div>
-                                    <div className='informacion-tarjeta'>
+                                    <div className='informacion-tarjeta d-flex flex-column'>
                                         <div className='contenedor-img-logo'>
                                             <h3 className='pixie-logo'>Pixie Games</h3>
                                         </div>
-                                        <a rel="noopener noreferrer" href='https://cosmic-gumdrop-5c7ec3.netlify.app/' target='_blank' className='btn btn-danger'>Ver sitio</a>
+                                        <a rel="noopener noreferrer" href='https://cosmic-gumdrop-5c7ec3.netlify.app/' target='_blank' className='btn btn-danger my-2'>Ver sitio</a>
                                         <a rel="noopener noreferrer" href='https://github.com/hollensteinfranco99/pixiegames' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>codigo</a>
                                     </div>
                                 </section>

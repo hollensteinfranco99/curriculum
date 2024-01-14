@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sulphur+Point&display=swap');
+
 @font-face {
     font-family: 'fuente-1';
     src: url('fonts/DOMCO.otf') format('opentype');
@@ -28,7 +30,9 @@ h3 {
 
 p,
 span {
-    font-family: 'fuente-2';
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 1.2rem !important;
     cursor: default !important;
 }
 
@@ -195,7 +199,7 @@ h2 {
         font-size: 1.2rem;
     }
     p{
-        font-size: 1.6rem !important;
+        font-size: 1.2rem !important;
     }
 }
     /* Media query para pantallas medianas (768px a 1023px) */
