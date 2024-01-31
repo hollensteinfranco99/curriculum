@@ -20,7 +20,6 @@ const Skills = forwardRef((props, ref) => {
                 <section className='cont-skills'>
                     <h2>Skills</h2>
                     <article className='skills'>
-
                         <div>
                         <article className='contenedor-img-skills'>
                             <img src={imagenes.css} alt="img" />
@@ -56,6 +55,12 @@ const Skills = forwardRef((props, ref) => {
                             <img src={imagenes.bootstrap} alt="img" />
                         </article>
                         <span>BOOTSTRAP</span>
+                        </div>
+                        <div>
+                        <article className='contenedor-img-skills'>
+                            <img src={imagenes.mongo} alt="img" />
+                        </article>
+                        <span>MONGODB</span>
                         </div>
                     </article>
                 </section>

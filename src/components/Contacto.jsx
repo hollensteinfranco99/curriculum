@@ -9,8 +9,8 @@ import Swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 
 const Contacto = forwardRef((props, ref) => {
+    const form = useRef(null);
 
-    const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
         let asunto = document.getElementById("asunto");
@@ -24,14 +24,13 @@ const Contacto = forwardRef((props, ref) => {
         let vemail = validarEmail(email);
 
         if (vasunto === true && vemail === true && vnombre === true && vmensaje === true) {
-
             emailjs.sendForm('service_drzhtfh', 'template_l3hbyc9', form.current, 'GOv-lfA6Qgik1eJg5').then(() => {
                 Swal.fire({
                     text: "Se envio de forma correcta su mensaje",
                     icon: "success"
                 });
                 limpiarForm();
-            }).error((error) => {
+            }).catch((error) => {
                 console.log(error);
                 Swal.fire({
                     icon: "error",
@@ -65,7 +64,7 @@ const Contacto = forwardRef((props, ref) => {
             input.className = 'form-control is-valid';
             return true;
         } else {
-            input.className = 'form-control is-invalid'
+            input.className = 'form-control is-invalid';
             return false;
         }
     }
@@ -126,25 +125,15 @@ const Contacto = forwardRef((props, ref) => {
                     <form ref={form} onSubmit={sendEmail} className='formulario'>
                         <div>
                             <input id='nombre' name='nombre' onBlur={(e) => validarCampos(e.target)} className='form-control' placeholder='nombre' type="text" required />
-                            <div className='invalid-feedback'>Debe ingrese un nombre.</div>
                         </div>
                         <div>
                             <input id='email' name='email' onBlur={() => validarEmail()} className='form-control' placeholder='email' type="email" required />
-                            <div className='invalid-feedback'>
-                                Debe ingrese un mail valido.
-                            </div>
                         </div>
                         <div>
                             <input id='asunto' name='asunto' onBlur={(e) => validarCampos(e.target)} className='form-control' placeholder='asunto' type="text" required />
-                            <div className='invalid-feedback'>
-                                Debe ingresar el asunto de su contacto.
-                            </div>
                         </div>
                         <div>
                             <textarea id='mensaje' name="mensaje" onBlur={(e) => validarMensaje(e.target)} className='form-control' placeholder='su mensaje' cols="30" rows="10" required></textarea>
-                            <div className='invalid-feedback'>
-                                Debe ingresar un mensaje mayor a 10 caracteres
-                            </div>
                         </div>
                         <button className='btn btn-success'>Enviar mensaje</button>
                     </form>

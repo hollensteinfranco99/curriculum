@@ -8,6 +8,7 @@ import pelicula from './proyecto-pelicula.png';
 import primelogo from './primelogo.png';
 import pixie from './pixieGame.png';
 import puntoDeVenta from './puntoDeVenta.png';
+import mongo from './mongo.png';
 
 let imagenes = {
     css: css,
@@ -19,7 +20,8 @@ let imagenes = {
     pelicula:pelicula,
     primelogo:primelogo,
     pixie:pixie,
-    puntoDeVenta: puntoDeVenta
+    puntoDeVenta: puntoDeVenta,
+    mongo:mongo
 }
 
 export {imagenes};

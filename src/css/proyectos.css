@@ -7,7 +7,8 @@
 }
 
 .contenedor-proyectos h2 {
-    margin: 4rem 0;
+    margin-top: 4rem;
+    
 }
 
 .galeria-proyectos {
@@ -235,7 +236,7 @@
         width: 7rem;
     }
     .descripcion p {
-        font-size: 1.4rem !important;
+        font-size: 1.2rem !important;
     }
     .descripcion span {
         font-size: 0.8rem;

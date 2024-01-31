@@ -155,7 +155,7 @@ const Proyectos = forwardRef((props, ref) => {
                                     </div>
                                 </section>
                                 <div className='descripcion'>
-                                    <p>La pagina es un punto de venta, donde podes realizar altas, bajas, modificar y consultar a una base de datos realizada con MongoDB</p>
+                                    <p>La pagina es un punto de venta, donde podes interactuar con una base de datos realizada con MongoDB</p>
                                     <span className='btn btn-dark ms-1'>HTML</span>
                                     <span className='btn btn-dark ms-1'>JAVASCRIPT</span>
                                     <span className='btn btn-dark ms-1'>CSS</span>
