@@ -19,7 +19,7 @@ const Contacto = forwardRef((props, ref) => {
         let mensaje = document.getElementById("mensaje");
 
         let vasunto = validarCampos(asunto);
-        let vmensaje = validarMensaje(mensaje);
+        let vmensaje = validarCampos(mensaje);
         let vnombre = validarCampos(nombre);
         let vemail = validarEmail(email);
 
@@ -81,15 +81,6 @@ const Contacto = forwardRef((props, ref) => {
             return false;
         }
     }
-    const validarMensaje = (input) => {
-        if (input.value.trim() !== '' && input.value.trim().length > 10) {
-            input.className = 'form-control is-valid';
-            return true;
-        } else {
-            input.className = 'form-control is-invalid';
-            return false;
-        }
-    }
     const DescargarPdf = async () => {
         const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
@@ -133,7 +124,7 @@ const Contacto = forwardRef((props, ref) => {
                             <input id='asunto' name='asunto' onBlur={(e) => validarCampos(e.target)} className='form-control' placeholder='asunto' type="text" required />
                         </div>
                         <div>
-                            <textarea id='mensaje' name="mensaje" onBlur={(e) => validarMensaje(e.target)} className='form-control' placeholder='su mensaje' cols="30" rows="10" required></textarea>
+                            <textarea id='mensaje' name="mensaje" onBlur={(e) => validarCampos(e.target)} className='form-control' placeholder='su mensaje' cols="30" rows="10" required></textarea>
                         </div>
                         <button className='btn btn-success'>Enviar mensaje</button>
                     </form>

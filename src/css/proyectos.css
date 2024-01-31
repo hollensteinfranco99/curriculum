@@ -1,6 +1,13 @@
 .contenedor-proyectos {
     padding: 2rem 2rem;
 }
+.contenedor-proyectos span{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 0.8rem !important;
+    cursor: default !important;
+    margin: 0;
+}
 
 .titulo-cont {
     text-align: center;
