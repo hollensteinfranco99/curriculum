@@ -6,7 +6,7 @@ const SobreMi = forwardRef((props, ref) => {
         <section ref={ref} className='scroll-item sobre-mi'>
         <h2>Sobre mi</h2>
         <article>
-            <p>Soy desarrollador web, estudiante en la carrera Tecnico superior en programacion.
+            <p className='parrafo'>Soy desarrollador web, estudiante en la carrera Tecnico superior en programacion.
                 me especializo en el desarrollo front-end principalmente.  <br/> En este momento me encuentro estudiando y busco ampliar mi campo laboral en el mundo de desarrollo web</p>
         </article>
     </section>

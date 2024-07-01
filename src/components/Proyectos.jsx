@@ -74,7 +74,7 @@ const Proyectos = forwardRef((props, ref) => {
                                     </div>
                                 </section>
                                 <div className='descripcion'>
-                                    <p>La pagina es un punto de venta, donde podes realizar altas, bajas, modificar y consultar a una base de datos realizada con MongoDB</p>
+                                    <p className='parrafo'>La pagina es un punto de venta, donde podes realizar altas, bajas, modificar y consultar a una base de datos realizada con MongoDB</p>
                                     <span className='btn btn-dark ms-1'>HTML</span>
                                     <span className='btn btn-dark ms-1'>JAVASCRIPT</span>
                                     <span className='btn btn-dark ms-1'>CSS</span>
@@ -99,7 +99,7 @@ const Proyectos = forwardRef((props, ref) => {
                                     </div>
                                 </section>
                                 <div className='descripcion'>
-                                    <p>La pagina sirve para mostrar, buscar y filtrar pelciulas y series que se encuentra en la API MovieDb</p>
+                                    <p className='parrafo'>La pagina sirve para mostrar, buscar y filtrar pelciulas y series que se encuentra en la API MovieDb</p>
                                     <span className='btn btn-dark ms-1'>HTML</span>
                                     <span className='btn btn-dark ms-1'>JAVASCRIPT</span>
                                     <span className='btn btn-dark ms-1'>CSS</span>
@@ -123,7 +123,7 @@ const Proyectos = forwardRef((props, ref) => {
                                     </div>
                                 </section>
                                 <div className='descripcion'>
-                                    <p>Pagina ilustrativa donde muestran los videojuegos mas populares</p>
+                                    <p className='parrafo'>Pagina ilustrativa donde muestran los videojuegos mas populares</p>
                                     <span className='btn btn-dark ms-1'>HTML</span>
                                     <span className='btn btn-dark ms-1'>CSS</span>
                                     <span className='btn btn-dark ms-1'>BOOTSTRAP</span>
@@ -155,7 +155,7 @@ const Proyectos = forwardRef((props, ref) => {
                                     </div>
                                 </section>
                                 <div className='descripcion'>
-                                    <p>La pagina es un punto de venta, donde podes interactuar con una base de datos realizada con MongoDB</p>
+                                    <p className='parrafo'>La pagina es un punto de venta, donde podes interactuar con una base de datos realizada con MongoDB</p>
                                     <span className='btn btn-dark ms-1'>HTML</span>
                                     <span className='btn btn-dark ms-1'>JAVASCRIPT</span>
                                     <span className='btn btn-dark ms-1'>CSS</span>
@@ -179,7 +179,7 @@ const Proyectos = forwardRef((props, ref) => {
                                     </div>
                                 </section>
                                 <div className='descripcion'>
-                                    <p>La pagina sirve para mostrar, buscar y filtrar pelciulas y series que se encuentra en la API MovieDb</p>
+                                    <p className='parrafo'>La pagina sirve para mostrar, buscar y filtrar pelciulas y series que se encuentra en la API MovieDb</p>
                                     <span className='btn btn-dark ms-1'>HTML</span>
                                     <span className='btn btn-dark ms-1'>JAVASCRIPT</span>
                                     <span className='btn btn-dark ms-1'>CSS</span>
@@ -200,7 +200,7 @@ const Proyectos = forwardRef((props, ref) => {
                                     </div>
                                 </section>
                                 <div className='descripcion'>
-                                    <p>Pagina ilustrativa donde muestran los videojuegos mas populares</p>
+                                    <p className='parrafo'>Pagina ilustrativa donde muestran los videojuegos mas populares</p>
                                     <span className='btn btn-dark ms-1'>HTML</span>
                                     <span className='btn btn-dark ms-1'>CSS</span>
                                     <span className='btn btn-dark ms-1'>BOOTSTRAP</span>

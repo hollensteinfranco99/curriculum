@@ -1,36 +1,42 @@
-.contenedor-skills{
-    padding-top: 1rem;
-    margin:0px ;
+.contenedor-skills {
+    padding: 0;
+    margin-top: 0;
 }
-.padre-skills{
+
+.padre-skills {
     width: 100%;
-    margin: 0;
+    margin-top: 1rem;
     height: 100vh;
 }
-.cont-skills{
-    padding: 7rem;
+
+.cont-skills {
+    padding: 6rem;
     height: 100vh;
     margin: 0;
     width: 50%;
     background-color: #FEE9B7;
 }
-.skills{
+
+.skills {
     display: flex;
     flex-wrap: wrap;
     width: auto;
 }
-.skills div{
+
+.skills div {
     position: relative;
     margin-right: 1.4rem;
 }
-.skills div span{
+
+.skills div span {
     position: absolute;
     text-align: center;
     left: 20%;
     bottom: -3rem;
     font-size: 1.3rem;
 }
-.contenedor-img-skills{
+
+.contenedor-img-skills {
     width: 4rem;
     height: 4rem;
     border-radius: 5px;
@@ -43,49 +49,52 @@
     border: 1px solid black;
     padding: 5px;
 }
-.contenedor-img-skills:hover{
+
+.contenedor-img-skills:hover {
     box-shadow: 0px 2px 0px black;
     transform: translateY(6%);
 }
-.contenedor-img-skills img{
+
+.contenedor-img-skills img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
-.sobre-mi{
-    padding: 7rem 2rem;
+
+.sobre-mi {
+    padding: 6rem 2rem;
     width: 50%;
     background-color: #0a0802;
     color: white;
+    height: 100vh;
+    margin-top: 1rem;
 }
-.sobre-mi p{
-    margin: 5rem 0px;
+
+.sobre-mi p {
+    margin: 2rem 0px;
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 2.2rem;
 }
 
-@media (max-width : 1000px){
-    .cont-skills h2{
+@media (max-width: 1000px) {
+    .cont-skills h2 {
         text-align: center;
     }
-    .padre-skills{
+    .padre-skills {
         justify-content: center;
         display: flex;
     }
-    .skills{
+    .skills {
         display: flex;
         justify-content: center;
     }
-    .cont-skills{
+    .cont-skills {
         width: 100%;
         padding: 4rem 0;
     }
-    .sobre-mi{
+    .sobre-mi {
         width: 100%;
-    }
-    .sobre-mi p{
-        font-size: 1.2rem !important;
     }
 }
