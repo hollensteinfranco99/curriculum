@@ -65,7 +65,7 @@ const Proyectos = forwardRef((props, ref) => {
 
                                         <article className='d-flex justify-content-center'>
                                             <div className='me-2'>
-                                        <a rel="noopener noreferrer" href='https://github.com/hollensteinfranco99/negocio-front' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>Frontend</a>
+                                        <a rel="noopener noreferrer" href='https://github.com/hollensteinfranco99/negocio-front'  target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>Frontend</a>
                                             </div>
                                             <div className='me-2'>
                                         <a rel="noopener noreferrer" href='https://github.com/hollensteinfranco99/negocio-backend' target='_blank' className='px-3 py-1 btn btn-warning btn-codigo'>Backend</a>
