@@ -78,10 +78,10 @@ const ContenedorSecciones = (props) => {
         passive: false,
       });
       return () => {
-        container.removeEventListener("touchstart", handleTouchStart);
-        container.removeEventListener("touchmove", handleTouchMove);
-        container.removeEventListener("touchend", handleTouchEnd);
-        container.removeEventListener("wheel", handleWheel);
+        container.removeEventListener("touchstart", handleTouchStart,{passive:false});
+        container.removeEventListener("touchmove", handleTouchMove,{passive:false});
+        container.removeEventListener("touchend", handleTouchEnd,{passive:false});
+        container.removeEventListener("wheel", handleWheel,{passive:false});
       };
     };
 
